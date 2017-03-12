@@ -367,7 +367,7 @@ Testimony FORM
             <div style="width: 80%;margin-left: 10%;padding-top: 2%; padding-bottom: 2%;">
                 <!--Changed-->
                 <!--SET A MARGIN!! -->
-                <form action="Testimony.php" method="POST">
+                <form action="Testimony.php" method="POST" enctype="multipart/form-data">
                     <input style="width:100%; padding-left: 12px;" type="text" name="tname" class="form-control1" placeholder="Name">
                     <!--Changed-->
                     <div class="testimonyForm"><input style="width:100%;  padding-left: 12px;" type="email" name="temail" class="form-control1" placeholder="Email-Id"></div>
@@ -375,7 +375,7 @@ Testimony FORM
                     <input id="uploadFile" style="width:100%;margin-top: 5%;" placeholder="Select a picture" disabled="disabled" />
                     <div class="fileUpload btn">
                         <span style="color: white;">Upload</span>
-                        <input id="uploadBtn" type="file" class="upload" />
+                        <input id="uploadBtn" name="image" type="file" class="upload" />
                     </div>
                     <script>
                         document.getElementById("uploadBtn").onchange = function () {
