@@ -90,16 +90,14 @@ jQuery(function($) {'use strict';
 			el: '#gmap',
 			lat: 19.350566,
 			lng: 72.916515,
-			scrollwheel:false,
-			zoom: 18,
+			scrollwheel:true,
+			zoom: 15,
 			zoomControl : false,
 			panControl : false,
 			streetViewControl : false,
 			mapTypeControl: false,
 			overviewMapControl: false,
-			clickable: true,
-		
-	
+			clickable: true	
 			
 		});
 
@@ -181,3 +179,21 @@ $(document).ready(function(){
     }, 1000);
 	});
 });
+
+
+
+
+
+
+
+
+
+var isVisible = false;
+$(window).scroll(function(){
+	var show = $(window).scrollTop()>200;	
+	if(show && !isVisible ){
+		isVisible = true;
+		$("#testing").show();
+	}
+	
+})

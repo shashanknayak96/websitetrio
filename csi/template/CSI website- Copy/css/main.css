@@ -783,7 +783,7 @@ font-size: 90%;
 }
 
 .tour-button {
-  background-image: url(../images/tropy.png);
+  background-image: url(../images/tropy.png);  
   height: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -804,8 +804,6 @@ font-size: 90%;
   position: relative;
 }
 
-.person-thumb img {
-}
 
 
 .social-profile {
@@ -1020,6 +1018,7 @@ ul.elements li > i{
 
 .portfolio-thumb {
   position: relative;
+  margin-top: 15px;
 }
 
 .portfolio-thumb img {
@@ -2764,12 +2763,11 @@ border-bottom:transparent;
 border-left:transparent;
 border-right:transparent;
 } 
-.row #addbg
-{
+
+footer{
   background: url(../images/home/slider-bg.png) 0 100% repeat-x;
-    position: relative;
+  position: relative;
    max-width:100%;
-   z-index:-1;
 }
 .footeralign .container
 {
@@ -2970,27 +2968,31 @@ h1 {
 /*backimage starts*/
 #bgimg
 {
-    background-image: url(../images/home/slider/ucoe.jpg);
+    background-image: url(../images/home/slider/ucoenew.jpg);
+    border-radius: 10px;
     opacity: 0.9;
     width: auto;
     height: auto;
     position: relative;
     background-repeat: no-repeat;
-  background-position: center
+     background-position: center
    
 }
 .slide-text h2
 {
-   color: #111;
+   color: white;
    text-align: center;
    padding: 5%;
+   margin-top: 5%;
 }
 /*backimage ends*/
 .quotes
 {
 font-size:50px;
-  color:#000;
+  color:white;
 }
+
+
 @media  screen and (max-width:300px)
 {
   #cp
@@ -3049,6 +3051,7 @@ font-size:50px;
     position: relative;
     display: inline;
    background: #00aeef;
+   border-radius: 5px;
    color:#fff;
    cursor: pointer;
 
@@ -3062,7 +3065,7 @@ font-size:50px;
      z-index: 1;
     bottom: 150%;
     left: 25%;
-    height: 300px;
+    height: 350px;
     width:200px;
     margin-left: -60px;
      vertical-align: middle;
@@ -3143,3 +3146,16 @@ padding-top:5%;
 
 
 /*tooltip ends*/
+.ending{
+  text-align: center;
+}
+
+#testing{
+  margin:5%;
+  
+  padding: 2%;
+  border-radius: 10px;
+  display: none;
+  text-align: center;
+  background-color: #B0B0B0;
+}
