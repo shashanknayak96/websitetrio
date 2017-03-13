@@ -162,3 +162,22 @@ function getShowLinkText(currentText) {
     return newText;
 }
 	/*Showless/Show more code ends*/
+	/*for show/hide a div on click*/
+	$(document).ready(function(){
+		  $(".tooltext").hide();
+    $(".tool").click(function(){
+        $(".tooltext").toggle();
+    });
+    // $(".tool").click(function(){
+    //     $(".tooltext").show();
+    // });
+});
+/*for show/hide a div on click ends*/
+/*scrolling to contact form */
+$(document).ready(function(){
+	$(".cnt").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#services").offset().top
+    }, 1000);
+	});
+});

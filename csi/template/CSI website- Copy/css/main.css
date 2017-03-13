@@ -547,9 +547,11 @@ ul.sub-menu {
 
 #home-slider .slide-text{
   position: absolute;
-  top: 50px;
-  left: 0;
-  width: 450px;
+text-align: center;
+top:15%;
+font-weight: 500;
+font-size: 90%; 
+  width: 100%;
 }
 
 .animate-in .slide-text {
@@ -2786,7 +2788,7 @@ border-right:transparent;
 }
 .footer
 {
- text-align: end;
+ text-align: center;
  /*margin-right:10%;*/
  padding: 2%;
  border-top:0.5px solid #FFA500;
@@ -2956,7 +2958,7 @@ h1 {
 .calender
 {
   padding: 5%;
-  border:2px dashed #FFA500;/*#00aeef blue color*/
+  border:2px dashed #00aeef;/* blue color*/
   height:400px;
   width: 100%;
 }
@@ -2965,6 +2967,30 @@ h1 {
   cursor: pointer;
 }
 /*calender ends*/
+/*backimage starts*/
+#bgimg
+{
+    background-image: url(../images/home/slider/ucoe.jpg);
+    opacity: 0.9;
+    width: auto;
+    height: auto;
+    position: relative;
+    background-repeat: no-repeat;
+  background-position: center
+   
+}
+.slide-text h2
+{
+   color: #111;
+   text-align: center;
+   padding: 5%;
+}
+/*backimage ends*/
+.quotes
+{
+font-size:50px;
+  color:#000;
+}
 @media  screen and (max-width:300px)
 {
   #cp
@@ -3018,3 +3044,102 @@ h1 {
       margin-left: 30%;
 }
 }
+/*tooltip*/
+.tool {
+    position: relative;
+    display: inline;
+   background: #00aeef;
+   color:#fff;
+   cursor: pointer;
+
+}
+
+.tool .tooltext {
+    visibility: hidden;
+   background-color: black;
+     border-radius: 6px;
+   position: absolute;
+     z-index: 1;
+    bottom: 150%;
+    left: 25%;
+    height: 300px;
+    width:200px;
+    margin-left: -60px;
+     vertical-align: middle;
+}
+
+.tool .tooltext::after
+ {
+    
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tool .tooltext {
+    visibility: visible;
+}
+.tool.portfolio-view {
+  display: none;
+  position: absolute;
+  top: 0;
+  background:rgba(255, 255, 255, 0.3);
+  width: 50%;
+  text-align: center;
+   border-radius: 100%;
+  
+    
+}
+.tool.portfolio-info {
+  overflow: auto;
+ 
+}
+
+.tool .portfolio-info h3 {
+  font-size: 20px;
+ color:#fff;
+  text-align:center;
+  font-weight:400;
+ /* margin-left:25%;*/
+  
+}
+.tool .portfolio-info h6
+{
+  color:#fff;
+}
+.tool .portfolio-info h2 {
+  font-size: 18px;
+  font-weight:400;
+  text-align:center;
+  color:#fff;
+
+  
+}
+.tool.portfolio-single {
+ 
+  position: relative;
+}
+
+.tool.portfolio-thumb {
+padding-top:5%;
+  position: relative;
+}
+
+.tool.portfolio-thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.tool.portfolio-single:hover .portfolio-view{
+  display: block;
+  -webkit-animation: fadeInUp 400ms;
+  animation: fadeInUp 400ms;
+}
+
+
+/*tooltip ends*/
