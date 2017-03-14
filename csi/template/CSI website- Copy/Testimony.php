@@ -44,10 +44,17 @@ $mail->Body = $testimony;
 
 //send the message, check for errors
 if (!$mail->send()) {    
-  
-    echo "Mailer Error: " . $mail->ErrorInfo;
+  "<script>
+   window.location.href='/CSI website- Copy/index.html';
+   alert('Sorry, we are experiencing some problems.. Please try again later.);
+   </script>
+   "
 } else {
-    echo "Message sent!";
+   "<script>
+   window.location.href='/CSI website- Copy/index.html';
+   alert('Message sent successfully!);
+   </script>
+   "
 }
 
 ?>

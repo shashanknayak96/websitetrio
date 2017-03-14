@@ -180,6 +180,12 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+  $('ul li').click(function(){
+    $(this).addClass("active");
+    $('li').removeClass("active");
+});
+});
 
 
 

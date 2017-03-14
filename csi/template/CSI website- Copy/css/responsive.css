@@ -22,7 +22,6 @@
     padding-left: 20px;
   }
 
-
 }
 
 /*md only*/
@@ -73,7 +72,9 @@
 /* sm */
 @media only screen and (max-width : 992px) {
 
-
+ #header .navbar-inverse .container{
+    position: relative;
+  }
 
   h1{
     font-size: 25px;
