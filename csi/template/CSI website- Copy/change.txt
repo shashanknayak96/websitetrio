@@ -1,0 +1,10 @@
+
+for achievement
+<div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Our Achievements</h1>
+                            <p>Awarded as the Best Accredited Student Branch<br>for 2015-2016  by <br> At CSI Annual Convention 2016,Coimbatore </p>
+</div>
+for change in logo
+ <a class="navbar-brand" href="index.html">
+                      <h1><img src="images/logo4.png" alt="logo" height="70px" width="70px"><img src="images/logo2.jpg" alt="logo" height="70px" width="70px"></h1>
+                    </a>

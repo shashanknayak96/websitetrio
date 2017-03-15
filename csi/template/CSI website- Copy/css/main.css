@@ -173,8 +173,10 @@ top:0;
 
 #header{
 
-  margin-bottom: 0;
+
   padding: 30px 0 60px 0;
+ 
+
 }
 
 #header .navbar-inverse .container{
@@ -183,6 +185,8 @@ top:0;
   background-color: white;
   position: fixed;
   z-index: 999;
+
+
 }
 
 .search{
@@ -286,11 +290,11 @@ top:0;
 }
 
 #header .navbar-nav.navbar-right >li a {
-  color: #000;
+ 
   font-size: 12px;
   padding: 20px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 
@@ -300,7 +304,7 @@ top:0;
 .navbar-inverse .navbar-nav > .open > a {
   background-color: inherit;
   border: 0;
-  color: #00aeef;
+  color: #000033;
 }
 
 
@@ -545,6 +549,7 @@ ul.sub-menu {
 #home-slider {
  background: url(../images/ucoe-slide1.jpg) 0 100% repeat-x;
   position: relative;
+  background-attachment: fixed;
    margin-top:-5%;
 }
 
@@ -782,7 +787,11 @@ font-size: 90%;
 #team-carousel {
   margin-top: 80px;
 }
-
+.carousel-inner h2{
+	color: #000033;
+	font-weight: 600;
+	
+}
 #company-information .padding-top{
   padding-top: 172px;
   
@@ -2811,7 +2820,7 @@ footer{
    border-top: transparent;
     border-right:transparent;
      border-left:transparent ;
-  border-bottom: 1px groove #000;
+  border-bottom: 1px dashed #000;
 }
 /*
 SHASHANK
@@ -2996,11 +3005,35 @@ h1 {
    margin-top: 5%;
 }
 /*backimage ends*/
-.quotes
-{
-font-size:100%;
+.quotes{
+	background-color: #00aeef;
+	border-radius: 5px;
+font-size:200%;
 font-weight: 500;
-  color:#000;
+  color:#ffffff;
+}
+
+.maintitle {
+background-color:rgba(255,255,255, 0.8);
+
+margin-top: 8%;
+background-position: center;
+border-radius: 20px;
+border:none;
+font-family: Impact, serif;
+font-size: 60px;
+font-weight: 100px;
+line-height: 1.45;
+color: #000033;
+}
+.maintitle:before{
+z-index: -1;
+content: "\201C";
+font-size: 500%;
+position: absolute;
+left: -20px;
+top: -50%;
+color: #00033;
 }
 
 
@@ -3065,9 +3098,26 @@ font-weight: 500;
    border-radius: 5px;
    color:#fff;
    cursor: pointer;
+    animation: color-animation 2s infinite linear alternate;
+	font-size: 20px;
 
 }
-
+.tool h6 a
+{
+	color:#fff;
+}
+/* toggling bg */
+ @keyframes color-animation {
+    0% {
+       background: #ad1457;
+    }
+    50% {
+       background: #6a1b9a;
+    } 
+    100% {
+       background: #bbdefb
+    } 
+ }
 .tool .tooltext {
     visibility: hidden;
    background-color: black;
@@ -3075,7 +3125,7 @@ font-weight: 500;
    position: absolute;
      z-index: 1;
     bottom: 150%;
-    left: 25%;
+    left: 33%;
     height: 350px;
     width:200px;
     margin-left: -60px;
@@ -3171,3 +3221,11 @@ padding-top:5%;
   background-color: #B0B0B0;
 }
 
+.aboutwebsite{
+	
+	color: #000;
+}
+
+.aboutwebsite h2{
+	color: #000033;
+}

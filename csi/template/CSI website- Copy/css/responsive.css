@@ -21,7 +21,7 @@
   #header .navbar-nav li ul.sub-menu li a {
     padding-left: 20px;
   }
-
+  
 }
 
 /*md only*/
@@ -29,8 +29,15 @@
   .col-md-4.portfolio-item{
     width: 33%;
   }  
-
+.maintitle {
+	
 }
+.maintitle:before{
+	left: -10px;
+}
+  
+}
+
 
 /*sm only*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -41,6 +48,14 @@
 .testimonialImage{
   padding-left:  0px;
 }
+.maintitle {
+	
+}
+.maintitle:before{
+	left: -10px;
+}
+
+
 }
 
 /* md */
@@ -73,6 +88,16 @@
 /* sm */
 @media only screen and (max-width : 992px) {
 
+.maintitle {
+	font-size: 40px;
+	background-color: rgba(255,255,255,0.3);
+	
+	}
+.maintitle:before{
+	left: 0px;
+	top: -40%;
+}
+  
  #header .navbar-inverse .container{
     position: relative;
   }
