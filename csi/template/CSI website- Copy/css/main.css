@@ -543,13 +543,15 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
- /* background: url(../images/home/slider-bg.png) 0 100% repeat-x;*/
+ background: url(../images/ucoe-slide1.jpg) 0 100% repeat-x;
   position: relative;
+   margin-top:-5%;
 }
 
 #home-slider .main-slider {
   position: relative;
   height: 450px;
+ 
 }
 
 #home-slider .slide-text{
@@ -2974,7 +2976,7 @@ h1 {
 }
 /*calender ends*/
 /*backimage starts*/
-#bgimg
+/*#bgimg
 {
     background-image: url(../images/home/slider/ucoenew.jpg);
     border-radius: 10px;
@@ -2985,7 +2987,7 @@ h1 {
     background-repeat: no-repeat;
      background-position: center
    
-}
+}*/
 .slide-text h2
 {
    color: white;
@@ -2996,8 +2998,9 @@ h1 {
 /*backimage ends*/
 .quotes
 {
-font-size:50px;
-  color:white;
+font-size:100%;
+font-weight: 500;
+  color:#000;
 }
 
 
