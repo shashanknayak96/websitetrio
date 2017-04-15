@@ -31,10 +31,10 @@ $mail->Host = 'smtp.gmail.com';
 $mail->Port = 465;
 $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
-$mail->Username = "ucoecsi@gmail.com";
-$mail->Password = "ucoe@123";
+$mail->Username = "yagnesh.devashrayee@universalcoe.edu.in";
+$mail->Password = "yagnesh12345";
 //mail->setFrom('testimonymessages.com', 'Testimony');
-$mail->addAddress('ucoecsi@gmail.com', 'Testimony');
+$mail->addAddress('yagnesh.devashrayee@universalcoe.edu.in', 'Testimony');
 $mail->AddAttachment($file,'myphoto.png');
 
 $mail->Subject = 'Testimonies';
