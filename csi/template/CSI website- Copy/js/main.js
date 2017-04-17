@@ -188,18 +188,23 @@ $(document).ready(function(){
 });
 
 
+//scroll to top
 
-
-
-
-
-
-var isVisible = false;
-$(window).scroll(function(){
-	var show = $(window).scrollTop()>200;	
-	if(show && !isVisible ){
-		isVisible = true;
-		$("#testing").show();
-	}
-	
-})
+$(window).scroll(function() {
+   $(document).ready(function(){
+	$("#testing").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#header").offset().top
+    }, 300);
+	});
+});
+});
+$("#testing").hide();
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+        $("#testing").fadeIn("slow");
+    }
+    else {
+        $("#testing").fadeOut("fast");
+    }
+});
