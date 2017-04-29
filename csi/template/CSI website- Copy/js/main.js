@@ -115,7 +115,7 @@ jQuery(function($) {'use strict';
 
 });
 /*Showless/Show more code starts*/
-{/*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>*/}
+/*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>*/
 	
 	$(".show-more a").each(function() {
     var $link = $(this);
@@ -189,22 +189,23 @@ $(document).ready(function(){
 
 
 //scroll to top
-
+$(document).ready(function(){
+	$("#testing").hide();
 $(window).scroll(function() {
-   $(document).ready(function(){
-	$("#testing").click(function(){
-    $('html, body').animate({
-        scrollTop: $("#header").offset().top
-    }, 300);
-	});
-});
-});
-$("#testing").hide();
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
+		 if ($(window).scrollTop() > 400) {
         $("#testing").fadeIn("slow");
     }
     else {
         $("#testing").fadeOut("fast");
     }
+	$("#testing").click(function(){
+    $('body').animate({
+        scrollTop: $("#header").position().top
+    }, 'slow');
+	});
 });
+});
+
+/*$(window).scroll(function() {
+   
+});*/
