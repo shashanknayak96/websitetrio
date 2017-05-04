@@ -108,7 +108,7 @@ jQuery(function($) {'use strict';
 			verticalAlign: 'bottom',
 			horizontalAlign: 'center',
 			backgroundColor: '#3e8bff',
-			Text:'hi'
+			
 			
 		});
 	}
@@ -188,24 +188,21 @@ $(document).ready(function(){
 });
 
 
-//scroll to top
-$(document).ready(function(){
-	$("#testing").hide();
-$(window).scroll(function() {
-		 if ($(window).scrollTop() > 400) {
-        $("#testing").fadeIn("slow");
-    }
-    else {
-        $("#testing").fadeOut("fast");
-    }
-	$("#testing").click(function(){
-    $('body').animate({
-        scrollTop: $("#header").position().top
-    }, 'slow');
+/*scroll to top*/
+$('#testing').hide();
+$(window).scroll(function(){
+	
+		if ($(this).scrollTop() > 500) {
+			$('#testing').fadeIn();
+		} else {
+			$('#testing').fadeOut();
+		}
 	});
-});
-});
+	
+	//Click event to scroll to top
+	$('#testing').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
 
-/*$(window).scroll(function() {
-   
-});*/
